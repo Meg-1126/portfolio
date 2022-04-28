@@ -37,14 +37,6 @@ li {
   list-style: none;
 }
 
-.wrapper-h2 {
-  border: none;
-  border-bottom: 2px dotted #E2DDE9;
-  border-width: 10px;
-  width: 20%;
-  margin: 60px auto;
-}
-
 .header {
   padding: 30px 10px;
   height: 5%;
@@ -149,6 +141,13 @@ li {
   border-radius: 50%;
   border: 1px solid #E2DDE9;
 }
+.work .wrapper-h2 {
+  border: none;
+  border-bottom: 2px dotted #E2DDE9;
+  border-width: 10px;
+  width: 20%;
+  margin: 60px auto;
+}
 .work .wrapper-pj {
   display: flex;
   justify-content: space-around;
@@ -166,6 +165,7 @@ li {
   border-width: 10px;
   width: 20%;
   text-align: center;
+  margin: 60px auto;
 }
 .about img {
   width: 250px;
@@ -206,16 +206,43 @@ li {
   border-bottom: 2px dotted #E9DDDE;
   border-width: 10px;
   width: 20%;
+  margin: 60px auto;
   text-align: center;
+}
+.qualifications .wrapper-exp {
+  border: 3px solid #E9DDDE;
+  border-radius: 20px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px 30px;
+}
+.qualifications .wrapper-edu {
+  border: 3px solid #E9DDDE;
+  border-radius: 20px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px 30px;
 }
 
 .skills {
   background-color: #E2DDE9;
   height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.skills .skill-box {
+  text-align: center;
+  padding-top: 80px;
+  border: 1px solid white;
 }
 
-.contact {
-  height: 600px;
+.contact .wrapper-h2 {
+  border: none;
+  border-bottom: 2px dotted #DDE9E8;
+  border-width: 10px;
+  width: 20%;
+  margin: 60px auto;
+  text-align: center;
 }
 
 .footer {

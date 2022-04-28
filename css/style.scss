@@ -62,14 +62,14 @@ li {
 
 // ===CLASSES===
 // Common
-.wrapper-h2 {
-  // padding-top: 10px;
-  border: none;
-  border-bottom: 2px dotted $sub-color-purple;
-  border-width: 10px;
-  width: 20%;
-  margin: 60px auto;
-}
+// .wrapper-h2 {
+//   // padding-top: 10px;
+//   border: none;
+//   border-bottom: 2px dotted $sub-color-purple;
+//   border-width: 10px;
+//   width: 20%;
+//   margin: 60px auto;
+// }
 
 // Hero
 .header {
@@ -199,6 +199,15 @@ li {
     border: 1px solid $sub-color-purple;
   }
 
+  .wrapper-h2 {
+    // padding-top: 10px;
+    border: none;
+    border-bottom: 2px dotted $sub-color-purple;
+    border-width: 10px;
+    width: 20%;
+    margin: 60px auto;
+  }
+
   .wrapper-pj {
     display: flex;
     justify-content: space-around;
@@ -218,6 +227,7 @@ li {
     border-width: 10px;
     width: 20%;
     text-align: center;
+    margin: 60px auto;
   }
 
   img {
@@ -269,18 +279,54 @@ li {
     border-bottom: 2px dotted $main-color;
     border-width: 10px;
     width: 20%;
-    // margin: 60px auto;
+    margin: 60px auto;
     text-align: center;
+  }
+
+  .wrapper-exp {
+    border: 3px solid $main-color;
+    border-radius: 20px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px 30px;
+    
+  }
+
+  .wrapper-edu {
+    border: 3px solid $main-color;
+    border-radius: 20px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px 30px;
+    // display: none;
   }
 }
 // Skills
 .skills {
   background-color: $sub-color-purple;
   height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  .skill-box {
+    text-align: center;
+    padding-top: 80px;
+    border: 1px solid white;
+    
+  }
 }
 // Contact
 .contact {
-  height: 600px;
+  // height: 600px;
+
+  .wrapper-h2 {
+    border: none;
+    border-bottom: 2px dotted $sub-color-green;
+    border-width: 10px;
+    width: 20%;
+    margin: 60px auto;
+    text-align: center;
+  }
 }
 // Footer
 .footer {

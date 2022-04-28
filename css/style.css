@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+a {
+  text-decoration: none;
+  color: #212121;
+}
+a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: "Lobster", cursive;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  padding: 30px 10px;
+}
+.header ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-wrapper {
+  background-color: #E9DDDE;
+  height: 90vh;
+}
+
+.logo {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  text-align: center;
+  margin: auto;
+}
+.title-wrapper .job-title {
+  font-size: 1.5rem;
+}
+.title-wrapper .btn-contact {
+  margin-top: 2rem;
+  padding: 1.3rem 2rem;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 3px solid #212121;
+}
+.title-wrapper .btn-contact:hover {
+  cursor: pointer;
+  background-color: #212121;
+  color: white;
+  transition: 0.3s;
+}/*# sourceMappingURL=style.css.map */

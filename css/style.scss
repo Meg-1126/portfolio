@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600;700&display=swap');
+// ===VARIABLES===
+$main-color: #E9DDDE;
+$sub-color-green: #DDE9E8;
+$sub-color-purple: #E2DDE9;
+$sub-color-dgray: #212121;
+$heading-font: 'Lobster', cursive;
+$general-font: 'Montserrat', sans-serif;
+$font-size-h1: 4rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.5rem;
+$font-size-general: 1rem;
+
+// ===ELEMENTS===
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+a {
+  text-decoration: none;
+  color: $sub-color-dgray;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: .3s;
+  }
+}
+
+body {
+  font-family: $general-font;
+}
+
+button {
+  font-weight: 700;
+}
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-family: $heading-font;
+}
+li {
+  list-style: none;
+}
+
+// ===ID'S===
+// Hero
+// Work
+// About
+// Qualifications
+// Skills
+// Contact
+// Footer
+
+// ===CLASSES===
+// Hero
+.header {
+  padding: 30px 10px;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+   
+.hero-wrapper {
+  background-color: $main-color;
+  height: 90vh;
+}
+
+.logo {
+  font-family: $heading-font;
+  font-size: 2rem;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  text-align: center;
+  margin: auto;
+
+  .job-title {
+    font-size: 1.5rem;
+  }
+
+  .btn-contact {
+    margin-top: 2rem;
+    padding: 1.3rem 2rem;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 3px solid $sub-color-dgray;
+    &:hover {
+      cursor: pointer;
+      background-color: $sub-color-dgray;
+      color: white;
+      transition: .3s;
+    }
+  }
+}
+// Work
+// About
+// Qualifications
+// Skills
+// Contact
+// Footer

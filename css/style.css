@@ -16,6 +16,8 @@ a:hover {
 
 body {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 button {
@@ -28,14 +30,24 @@ h1 {
 
 h2 {
   font-family: "Lobster", cursive;
+  font-size: 2.5rem;
 }
 
 li {
   list-style: none;
 }
 
+.wrapper-h2 {
+  border: none;
+  border-bottom: 2px dotted #E2DDE9;
+  border-width: 10px;
+  width: 20%;
+  margin: 60px auto;
+}
+
 .header {
   padding: 30px 10px;
+  height: 5%;
 }
 .header ul {
   display: flex;
@@ -47,6 +59,28 @@ li {
   background-color: #E9DDDE;
   height: 90vh;
 }
+.hero-wrapper .hero-bottom {
+  text-align: center;
+  margin-top: 30px;
+}
+.hero-wrapper .hero-bottom .btn-contact {
+  margin-top: 2rem;
+  padding: 1.3rem 2rem;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 3px solid #212121;
+}
+.hero-wrapper .hero-bottom .btn-contact:hover {
+  cursor: pointer;
+  background-color: #212121;
+  color: white;
+  transition: 0.3s;
+}
+.hero-wrapper .hero-bottom .job-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
 
 .logo {
   font-family: "Lobster", cursive;
@@ -54,26 +88,156 @@ li {
 }
 
 .title-wrapper {
+  width: 50%;
+  height: 55%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+.title-wrapper .design {
+  width: 250px;
+  height: 400px;
+  background-color: transparent;
+  border: 5px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  left: 32%;
+  transform: rotate(60deg);
+  z-index: 1;
+}
+.title-wrapper .design2 {
+  width: 250px;
+  height: 400px;
+  background-color: transparent;
+  border: 5px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  left: 32%;
+  transform: rotate(-60deg);
+  z-index: 1;
+}
+.title-wrapper .heading-name {
+  z-index: 5;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.work {
+  text-align: center;
+  height: 600px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 45%;
-  text-align: center;
+}
+.work .btn-work {
+  margin-top: 2rem;
+  padding: 1.3rem 2rem;
+  border-radius: 20px;
+  background-color: #E2DDE9;
+  border: none;
+  width: 200px;
   margin: auto;
 }
-.title-wrapper .job-title {
-  font-size: 1.5rem;
+.work .pj-hide {
+  display: none;
 }
-.title-wrapper .btn-contact {
+.work img {
+  width: 300px;
+  height: 280px;
+  border-radius: 50%;
+  border: 1px solid #E2DDE9;
+}
+.work .wrapper-pj {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about {
+  background-color: #DDE9E8;
+  height: 525px;
+  display: flex;
+  flex-direction: column;
+}
+.about .wrapper-h2 {
+  border: none;
+  border-bottom: 2px dotted white;
+  border-width: 10px;
+  width: 20%;
+  text-align: center;
+}
+.about img {
+  width: 250px;
+  height: 230px;
+  border-radius: 50%;
+}
+.about .wrapper-img-txt {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.about .wrapper-img-txt .about-img {
+  margin-right: 40px;
+}
+.about .wrapper-img-txt .about-txt {
+  width: 80%;
+}
+.about .wrapper-img-txt .btn-about {
   margin-top: 2rem;
   padding: 1.3rem 2rem;
   border-radius: 20px;
   background-color: transparent;
   border: 3px solid #212121;
 }
-.title-wrapper .btn-contact:hover {
+.about .wrapper-img-txt .btn-about:hover {
   cursor: pointer;
   background-color: #212121;
   color: white;
   transition: 0.3s;
+}
+
+.qualifications {
+  height: 600px;
+}
+.qualifications .wrapper-h2 {
+  border: none;
+  border-bottom: 2px dotted #E9DDDE;
+  border-width: 10px;
+  width: 20%;
+  text-align: center;
+}
+
+.skills {
+  background-color: #E2DDE9;
+  height: 400px;
+}
+
+.contact {
+  height: 600px;
+}
+
+.footer {
+  background-color: #212121;
+  height: 150px;
+  text-align: center;
+}
+.footer i {
+  color: #212121;
+}
+.footer-bar {
+  background-color: #DDE9E8;
+  height: 40px;
+}
+.footer-btn-back {
+  padding-top: 10px;
+}
+.footer-copyright {
+  color: white;
+  display: block;
+  padding-top: 2rem;
+}
+.footer .fa-copyright {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

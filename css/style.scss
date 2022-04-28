@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600;700&display=swap');
+
 // ===VARIABLES===
 $main-color: #E9DDDE;
 $sub-color-green: #DDE9E8;
@@ -7,9 +8,9 @@ $sub-color-dgray: #212121;
 $heading-font: 'Lobster', cursive;
 $general-font: 'Montserrat', sans-serif;
 $font-size-h1: 4rem;
-$font-size-h2: 2rem;
+$font-size-h2: 2.5rem;
 $font-size-h3: 1.5rem;
-$font-size-general: 1rem;
+$font-size-general: 1.2rem;
 
 // ===ELEMENTS===
 * {
@@ -29,18 +30,23 @@ a {
 
 body {
   font-family: $general-font;
+  font-size: $font-size-general;
+  line-height: 1.5;
 }
 
 button {
   font-weight: 700;
 }
+
 h1 {
   font-size: $font-size-h1;
 }
 
 h2 {
   font-family: $heading-font;
+  font-size: $font-size-h2;
 }
+
 li {
   list-style: none;
 }
@@ -55,19 +61,59 @@ li {
 // Footer
 
 // ===CLASSES===
+// Common
+.wrapper-h2 {
+  // padding-top: 10px;
+  border: none;
+  border-bottom: 2px dotted $sub-color-purple;
+  border-width: 10px;
+  width: 20%;
+  margin: 60px auto;
+}
+
 // Hero
 .header {
   padding: 30px 10px;
+  height: 5%;
+
   ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
+
 }
    
 .hero-wrapper {
   background-color: $main-color;
   height: 90vh;
+
+ 
+
+  .hero-bottom {
+    text-align: center;
+    margin-top: 30px;
+
+    .btn-contact {
+      margin-top: 2rem;
+      padding: 1.3rem 2rem;
+      border-radius: 20px;
+      background-color: transparent;
+      border: 3px solid $sub-color-dgray;
+      &:hover {
+        cursor: pointer;
+        background-color: $sub-color-dgray;
+        color: white;
+        transition: .3s;
+      }
+    }
+    .job-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: white;
+
+    }
+  }
 }
 
 .logo {
@@ -76,34 +122,191 @@ li {
 }
 
 .title-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 45%;
+  width: 50%;
+  height: 55%;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
+  position: relative;
 
-  .job-title {
-    font-size: 1.5rem;
+  .design {
+    width: 250px;
+    height: 400px;
+    background-color: transparent;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 32%;
+    transform: rotate(60deg);
+    z-index: 1;
   }
 
-  .btn-contact {
+  .design2 {
+    width: 250px;
+    height: 400px;
+    background-color: transparent;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 32%;
+    transform: rotate(-60deg);
+    z-index: 1;
+  }
+
+  .heading-name {
+    z-index: 5;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+
+  
+
+  
+}
+// Work
+.work {
+  text-align: center;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+
+  .btn-work {
     margin-top: 2rem;
     padding: 1.3rem 2rem;
     border-radius: 20px;
-    background-color: transparent;
-    border: 3px solid $sub-color-dgray;
-    &:hover {
-      cursor: pointer;
-      background-color: $sub-color-dgray;
-      color: white;
-      transition: .3s;
+    background-color: $sub-color-purple;
+    border: none;
+    width: 200px;
+    margin: auto;
+  }
+
+  // .pj {
+  //   width: 30%;
+  //   height: 30%;
+  //   object-fit: cover;
+  // }
+
+  .pj-hide {
+    display: none;
+  }
+
+  img {
+    width: 300px;
+    height: 280px;
+    border-radius: 50%;
+    border: 1px solid $sub-color-purple;
+  }
+
+  .wrapper-pj {
+    display: flex;
+    justify-content: space-around;
+  }
+
+}
+// About
+.about {
+  background-color: $sub-color-green;
+  height: 525px;
+  display: flex;
+  flex-direction: column;
+ 
+  .wrapper-h2 {
+    border: none;
+    border-bottom: 2px dotted white;
+    border-width: 10px;
+    width: 20%;
+    text-align: center;
+  }
+
+  img {
+    width: 250px;
+    height: 230px;
+    border-radius: 50%;
+  }
+
+
+  .wrapper-img-txt {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+
+    .about-img {
+      margin-right: 40px;
     }
+
+    .about-txt {
+      width: 80%;
+    }
+
+
+    .btn-about {
+      margin-top: 2rem;
+      padding: 1.3rem 2rem;
+      border-radius: 20px;
+      background-color: transparent;
+      border: 3px solid $sub-color-dgray;
+      &:hover {
+        cursor: pointer;
+        background-color: $sub-color-dgray;
+        color: white;
+        transition: .3s;
+      }
+    }
+
+  }
+
+
+}
+// Qualifications
+.qualifications {
+  height: 600px;
+
+  .wrapper-h2 {
+    border: none;
+    border-bottom: 2px dotted $main-color;
+    border-width: 10px;
+    width: 20%;
+    // margin: 60px auto;
+    text-align: center;
   }
 }
-// Work
-// About
-// Qualifications
 // Skills
+.skills {
+  background-color: $sub-color-purple;
+  height: 400px;
+}
 // Contact
+.contact {
+  height: 600px;
+}
 // Footer
+.footer {
+  background-color: $sub-color-dgray;
+  height: 150px;
+  text-align: center;
+  i {
+    color: $sub-color-dgray;
+  }
+
+  &-bar {
+    background-color: $sub-color-green;
+    height: 40px;
+  }
+  
+  &-btn-back {
+    padding-top: 10px;
+  }
+
+  &-copyright {
+    color: white;
+    display: block;
+    padding-top: 2rem;
+  }
+
+  .fa-copyright {
+    color: white;
+  }
+}

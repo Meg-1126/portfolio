@@ -109,12 +109,14 @@ li {
   background-color: rgba(255,255,255,0.3);
   background-blend-mode:lighten;
   height: 90vh;
-  background-image: url(../images/hero-bg.jpg);
+  // background-image: url(../images/hero-bg.jpg); /*rose*/
+  // background-image: url(../images/hero-flowers-1920.jpg); /*sm flower*/
+  background-image: url(../images/hero-toy-1920.jpg); /*toy*/
   background-size: cover;
 
   .hero-bottom {
     text-align: center;
-    margin: 30px auto;
+    margin: 10px auto;
     width: 30%;
     background-color: $main-color;
     border-radius: 20px;
@@ -136,61 +138,21 @@ li {
       font-size: 1.5rem;
       font-weight: 600;
       color: white;
-
     }
   }
 }
 
 .logo {
   font-family: $heading-font;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .title-wrapper {
-  width: 50%;
-  height: 55%;
   text-align: center;
   margin: 0 auto;
   padding-top: 10rem;
-  position: relative;
-
-  .design {
-    width: 250px;
-    height: 400px;
-    background-color: transparent;
-    border: 5px solid white;
-    border-radius: 50%;
-    position: absolute;
-    top: 20%;
-    left: 32%;
-    transform: rotate(60deg);
-    z-index: 1;
-  }
-
-  .design2 {
-    width: 250px;
-    height: 400px;
-    background-color: transparent;
-    border: 5px solid white;
-    border-radius: 50%;
-    position: absolute;
-    top: 20%;
-    left: 32%;
-    transform: rotate(-60deg);
-    z-index: 1;
-  }
-
-  .heading-name {
-    z-index: 5;
-    position: absolute;
-    top: 30%;
-    left: 10%;
-  }
-
-  
-
-  
 }
+
 // Work
 .work {
   text-align: center;
@@ -243,9 +205,9 @@ li {
 // About
 .about {
   background-color: $sub-color-green;
-  height: 525px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 5rem;
  
   .wrapper-h2 {
     border: none;
@@ -262,10 +224,10 @@ li {
     border-radius: 50%;
   }
 
-
   .wrapper-img-txt {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     width: 80%;
     margin: 0 auto;
 
@@ -274,7 +236,7 @@ li {
     }
 
     .about-txt {
-      width: 80%;
+      width: 90%;
     }
 
 
@@ -302,7 +264,7 @@ li {
 
   .wrapper-h2 {
     border: none;
-    border-bottom: 2px dotted $main-color;
+    border-bottom: 2px dotted $sub-color-purple;
     border-width: 10px;
     width: 30%;
     margin: 60px auto;
@@ -310,7 +272,7 @@ li {
   }
 
   .wrapper-exp {
-    border: 3px solid $main-color;
+    border: 3px solid $sub-color-purple;
     border-radius: 20px;
     width: 60%;
     margin: 0 auto;
@@ -329,7 +291,7 @@ li {
 }
 // Skills
 .skills {
-  background-color: $sub-color-purple;
+  background-color: $main-color;
   height: 400px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

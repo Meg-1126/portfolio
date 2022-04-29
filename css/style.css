@@ -69,12 +69,13 @@ li {
   background-color: rgba(255, 255, 255, 0.3);
   background-blend-mode: lighten;
   height: 90vh;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/hero-toy-1920.jpg);
+  /*toy*/
   background-size: cover;
 }
 .hero-wrapper .hero-bottom {
   text-align: center;
-  margin: 30px auto;
+  margin: 10px auto;
   width: 30%;
   background-color: #E9DDDE;
   border-radius: 20px;
@@ -100,46 +101,13 @@ li {
 
 .logo {
   font-family: "Lobster", cursive;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .title-wrapper {
-  width: 50%;
-  height: 55%;
   text-align: center;
   margin: 0 auto;
   padding-top: 10rem;
-  position: relative;
-}
-.title-wrapper .design {
-  width: 250px;
-  height: 400px;
-  background-color: transparent;
-  border: 5px solid white;
-  border-radius: 50%;
-  position: absolute;
-  top: 20%;
-  left: 32%;
-  transform: rotate(60deg);
-  z-index: 1;
-}
-.title-wrapper .design2 {
-  width: 250px;
-  height: 400px;
-  background-color: transparent;
-  border: 5px solid white;
-  border-radius: 50%;
-  position: absolute;
-  top: 20%;
-  left: 32%;
-  transform: rotate(-60deg);
-  z-index: 1;
-}
-.title-wrapper .heading-name {
-  z-index: 5;
-  position: absolute;
-  top: 30%;
-  left: 10%;
 }
 
 .work {
@@ -184,9 +152,9 @@ li {
 
 .about {
   background-color: #DDE9E8;
-  height: 525px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 5rem;
 }
 .about .wrapper-h2 {
   border: none;
@@ -202,8 +170,9 @@ li {
   border-radius: 50%;
 }
 .about .wrapper-img-txt {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   width: 80%;
   margin: 0 auto;
 }
@@ -211,7 +180,7 @@ li {
   margin-right: 40px;
 }
 .about .wrapper-img-txt .about-txt {
-  width: 80%;
+  width: 90%;
 }
 .about .wrapper-img-txt .btn-about {
   margin-top: 2rem;
@@ -232,14 +201,14 @@ li {
 }
 .qualifications .wrapper-h2 {
   border: none;
-  border-bottom: 2px dotted #E9DDDE;
+  border-bottom: 2px dotted #E2DDE9;
   border-width: 10px;
   width: 30%;
   margin: 60px auto;
   text-align: center;
 }
 .qualifications .wrapper-exp {
-  border: 3px solid #E9DDDE;
+  border: 3px solid #E2DDE9;
   border-radius: 20px;
   width: 60%;
   margin: 0 auto;
@@ -254,7 +223,7 @@ li {
 }
 
 .skills {
-  background-color: #E2DDE9;
+  background-color: #E9DDDE;
   height: 400px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

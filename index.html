@@ -151,13 +151,22 @@
             I’m looking forward to talking with you for our future
             collaboration!
           </p>
-          <form action="">
-            <label for="name">NAME</label>
-            <input type="text" />
-            <label for="email">EMAIL</label>
-            <input type="email" />
-            <label for="message">MESSAGE</label>
-            <input type="button" value="SEND A MESSAGE" />
+          <form class="form">
+            <div class="contact-info">
+              <label for="name">NAME</label>
+              <input type="text" id="name" name="name" class="name" size="30" required>
+            </div>
+            <div class="contact-info">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" class="email" size="30" required>
+            </div>
+            <div class="contact-info msg">
+              <label for="message" class="label-msg">MESSAGE</label><br />
+              <textarea name="message" id="message" cols="45" rows="7" class="message" required></textarea>
+            </div>
+            <div class="contact-info btn">
+              <button>SEND A MESSAGE</button>
+            </div>
           </form>
         </section>
       </main>

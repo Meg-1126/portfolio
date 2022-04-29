@@ -112,7 +112,6 @@ li {
 
 .work {
   text-align: center;
-  height: 600px;
   display: flex;
   flex-direction: column;
 }
@@ -134,8 +133,8 @@ li {
 }
 .work img {
   width: 300px;
-  height: 280px;
-  border-radius: 50%;
+  height: 300px;
+  border-radius: 20px;
   border: 1px solid #E2DDE9;
 }
 .work .wrapper-h2 {
@@ -164,11 +163,6 @@ li {
   text-align: center;
   margin: 60px auto;
 }
-.about img {
-  width: 250px;
-  height: 230px;
-  border-radius: 50%;
-}
 .about .wrapper-img-txt {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -177,7 +171,36 @@ li {
   margin: 0 auto;
 }
 .about .wrapper-img-txt .about-img {
-  margin-right: 40px;
+  margin-right: 20px;
+  position: relative;
+}
+.about .wrapper-img-txt .about-img .design-circle {
+  width: 250px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-width: 0.2rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+.about .wrapper-img-txt .about-img .design-circle2 {
+  width: 250px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-width: 0.2rem;
+  position: absolute;
+  top: -0.7rem;
+  left: -0.7rem;
+}
+.about .wrapper-img-txt .about-img img {
+  width: 250px;
+  height: 230px;
+  border-radius: 50%;
+  position: absolute;
 }
 .about .wrapper-img-txt .about-txt {
   width: 90%;
@@ -196,9 +219,6 @@ li {
   transition: 0.3s;
 }
 
-.qualifications {
-  height: 600px;
-}
 .qualifications .wrapper-h2 {
   border: none;
   border-bottom: 2px dotted #E2DDE9;
@@ -313,4 +333,80 @@ li {
 }
 .footer .fa-copyright {
   color: white;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media screen and (max-width: 576px) {
+  .header ul {
+    display: none;
+  }
+
+  .hero-wrapper {
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: lighten;
+    height: 90vh;
+    width: 100%;
+    background-image: url(../images/hero-toy-640.jpg);
+    /*toy*/
+    background-size: cover;
+  }
+  .hero-wrapper .hero-bottom {
+    text-align: center;
+    margin: 10px auto;
+    width: 30%;
+    background-color: #E9DDDE;
+    border-radius: 20px;
+  }
+  .hero-wrapper .hero-bottom .job-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+  }
+
+  .title-wrapper {
+    padding-top: 0;
+  }
+
+  .wrapper-pj {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-comment {
+    text-align: center;
+  }
+  .contact .form {
+    width: 80%;
+    border: 3px solid #DDE9E8;
+    border-radius: 20px;
+    margin: 60px auto;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact .form .contact-info {
+    margin: 0 auto;
+  }
+  .contact .form .contact-info input {
+    border: none;
+    border-bottom: 1px solid #DDE9E8;
+    font-size: 0.9rem;
+    width: 50%;
+  }
+  .contact .form .contact-info .message {
+    border: 1px solid #DDE9E8;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    width: 90%;
+  }
+  .contact .wrapper-h2 {
+    border: none;
+    border-bottom: 2px dotted #DDE9E8;
+    border-width: 10px;
+    width: 20%;
+    margin: 60px auto 30px;
+    text-align: center;
+  }
+}
+/*SMARTPHONE END*//*# sourceMappingURL=style.css.map */

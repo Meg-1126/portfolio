@@ -14,6 +14,10 @@ $font-size-h2: 2.5rem;
 $font-size-h3: 1.5rem;
 $font-size-general: 1.2rem;
 $font-size-sm: 0.9rem;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$x-lg: 1200px; 
 
 // ===ELEMENTS===
 * {
@@ -75,7 +79,8 @@ li {
 //   margin: 60px auto;
 // }
 
-// Hero
+
+  // Hero
 .header {
   padding: 40px 0 10px;
   margin: auto;
@@ -156,17 +161,15 @@ li {
 // Work
 .work {
   text-align: center;
-  height: 600px;
+  // height: 600px;
   display: flex;
   flex-direction: column;
 
   .btn-work {
-    // margin-top: 2rem;
     padding: 1.3rem 2rem;
     border-radius: 20px;
     background-color: $sub-color-purple;
     border: none;
-    // width: 200px;
     margin: auto;
     &:hover {
       cursor: pointer;
@@ -182,8 +185,8 @@ li {
 
   img {
     width: 300px;
-    height: 280px;
-    border-radius: 50%;
+    height: 300px;
+    border-radius: 20px;
     border: 1px solid $sub-color-purple;
   }
 
@@ -218,11 +221,7 @@ li {
     margin: 60px auto;
   }
 
-  img {
-    width: 250px;
-    height: 230px;
-    border-radius: 50%;
-  }
+  
 
   .wrapper-img-txt {
     display: grid;
@@ -232,13 +231,44 @@ li {
     margin: 0 auto;
 
     .about-img {
-      margin-right: 40px;
+      margin-right: 20px;
+      position: relative;
+
+      .design-circle {
+        width: 250px;
+        height: 230px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-width: .2rem;
+        position: absolute;
+        top: .5rem;
+        left: .5rem;
+      }
+
+      .design-circle2 {
+        width: 250px;
+        height: 230px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-width: .2rem;
+        position: absolute;
+        top: -.7rem;
+        left: -.7rem;
+      }
+    
+      img {
+        width: 250px;
+        height: 230px;
+        border-radius: 50%;
+        position: absolute;
+      }
     }
 
     .about-txt {
       width: 90%;
     }
-
 
     .btn-about {
       margin-top: 2rem;
@@ -260,8 +290,7 @@ li {
 }
 // Qualifications
 .qualifications {
-  height: 600px;
-
+  
   .wrapper-h2 {
     border: none;
     border-bottom: 2px dotted $sub-color-purple;
@@ -307,7 +336,6 @@ li {
 }
 // Contact
 .contact {
-  // height: 600px;
 
   &-comment {
     text-align: center;
@@ -396,3 +424,106 @@ li {
     color: white;
   }
 }
+
+
+
+// ===SMARTPHONE===
+@media screen and (max-width: $sm) {
+
+  .header {
+    ul {
+      display: none;
+    }  
+  }
+
+  .hero-wrapper {
+    background-color: rgba(255,255,255,0.3);
+    background-blend-mode:lighten;
+    height: 90vh;
+    width: 100%;
+    // background-image: url(../images/hero-bg.jpg); /*rose*/
+    // background-image: url(../images/hero-flowers-1920.jpg); /*sm flower*/
+    background-image: url(../images/hero-toy-640.jpg); /*toy*/
+    background-size: cover;
+  
+    .hero-bottom {
+      text-align: center;
+      margin: 10px auto;
+      width: 30%;
+      background-color: $main-color;
+      border-radius: 20px;
+  
+      .job-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: white;
+      }
+    }
+  }
+
+  .title-wrapper {
+    // text-align: center;
+    // margin: 0 auto;
+    padding-top: 0;
+  }
+
+  .wrapper-pj {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+
+  // Contact
+.contact {
+
+  &-comment {
+    text-align: center;
+  }
+
+  .form {
+    width: 80%;
+    // height: 400px;
+    border: 3px solid $sub-color-green;
+    border-radius: 20px;
+    margin: 60px auto;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    // display: grid;
+    // // grid-template-columns: 1fr;
+    // grid-template-rows: 1fr 1fr 1fr;
+    .contact-info {
+      margin: 0 auto;
+      
+      input {
+        border: none;
+        border-bottom: 1px solid $sub-color-green;
+        font-size: $font-size-sm;
+        width: 50%;
+      }
+      .message {
+        border: 1px solid $sub-color-green;
+        border-radius: 20px;
+        padding: 10px 15px;
+        font-size: $font-size-general;
+        width: 90%;
+      }
+    }
+    
+    
+  }
+
+  .wrapper-h2 {
+    border: none;
+    border-bottom: 2px dotted $sub-color-green;
+    border-width: 10px;
+    width: 20%;
+    margin: 60px auto 30px;
+    text-align: center;
+  }
+}
+
+
+} /*SMARTPHONE END*/

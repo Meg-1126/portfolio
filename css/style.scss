@@ -358,12 +358,15 @@ li {
         border: none;
         border-bottom: 1px solid $sub-color-green;
         font-size: $font-size-sm;
+        padding: 5px 5px;
+        outline: none;
       }
       .message {
         border: 1px solid $sub-color-green;
         border-radius: 20px;
         padding: 10px 15px;
         font-size: $font-size-general;
+        outline: none;
       }
     }
     .msg {

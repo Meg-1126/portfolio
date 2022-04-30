@@ -276,12 +276,15 @@ li {
   border: none;
   border-bottom: 1px solid #DDE9E8;
   font-size: 0.9rem;
+  padding: 5px 5px;
+  outline: none;
 }
 .contact .form .contact-info .message {
   border: 1px solid #DDE9E8;
   border-radius: 20px;
   padding: 10px 15px;
   font-size: 1.2rem;
+  outline: none;
 }
 .contact .form .msg {
   grid-column: 1/3;

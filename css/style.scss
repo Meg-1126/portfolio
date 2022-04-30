@@ -435,6 +435,13 @@ li {
 // ================
 @media screen and (max-width: $sm) {
 
+  h2 {
+    font-size: 2rem;
+  }
+  div, p, a, span {
+    font-size: 1rem;
+  }
+
   .header {
       display: none;
   }
@@ -457,7 +464,7 @@ li {
       border-radius: 20px;
   
       .job-title {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 600;
         color: white;
       }
@@ -465,9 +472,10 @@ li {
   }
 
   .title-wrapper {
-    padding-top: 3rem;
+    padding-top: 5rem;
     .heading-name {
       margin-top: 0;
+      font-size: 3rem;
     }
   }
 

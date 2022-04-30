@@ -342,6 +342,14 @@ li {
 }
 
 @media screen and (max-width: 576px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  div, p, a, span {
+    font-size: 1rem;
+  }
+
   .header {
     display: none;
   }
@@ -363,16 +371,17 @@ li {
     border-radius: 20px;
   }
   .hero-wrapper .hero-bottom .job-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: white;
   }
 
   .title-wrapper {
-    padding-top: 3rem;
+    padding-top: 5rem;
   }
   .title-wrapper .heading-name {
     margin-top: 0;
+    font-size: 3rem;
   }
 
   .work .btn-work {

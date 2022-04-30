@@ -219,6 +219,9 @@ li {
   transition: 0.3s;
 }
 
+.qualifications {
+  margin-bottom: 4rem;
+}
 .qualifications .wrapper-h2 {
   border: none;
   border-bottom: 2px dotted #E2DDE9;
@@ -339,7 +342,7 @@ li {
 }
 
 @media screen and (max-width: 576px) {
-  .header ul {
+  .header {
     display: none;
   }
 
@@ -366,16 +369,47 @@ li {
   }
 
   .title-wrapper {
-    padding-top: 0;
+    padding-top: 3rem;
+  }
+  .title-wrapper .heading-name {
+    margin-top: 0;
   }
 
-  .wrapper-pj {
+  .work .btn-work {
+    margin: 0 auto 2rem;
+  }
+  .work .wrapper-pj {
     display: flex;
     flex-direction: column;
   }
+  .work .wrapper-pj .pj {
+    margin-bottom: 2rem;
+  }
+
+  .about .wrapper-img-txt {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .about .wrapper-img-txt .about-img {
+    margin: 0 auto 3rem;
+  }
+  .about .wrapper-img-txt .about-img .design-circle {
+    position: initial;
+  }
+
+  .qualifications .wrapper-h2 {
+    margin: 4rem auto 4rem;
+    width: 60%;
+  }
+  .qualifications .wrapper-h2 .heading-qualifications {
+    font-size: 2.2rem;
+  }
 
   .contact-comment {
-    text-align: center;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
   }
   .contact .form {
     width: 80%;
@@ -388,13 +422,13 @@ li {
     align-items: center;
   }
   .contact .form .contact-info {
-    margin: 0 auto;
+    margin: 0.5rem 1rem;
   }
   .contact .form .contact-info input {
     border: none;
     border-bottom: 1px solid #DDE9E8;
     font-size: 0.9rem;
-    width: 50%;
+    width: 70%;
   }
   .contact .form .contact-info .message {
     border: 1px solid #DDE9E8;

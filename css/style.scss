@@ -290,7 +290,7 @@ li {
 }
 // Qualifications
 .qualifications {
-  
+  margin-bottom: 4rem;
   .wrapper-h2 {
     border: none;
     border-bottom: 2px dotted $sub-color-purple;
@@ -430,13 +430,13 @@ li {
 
 
 
-// ===SMARTPHONE===
+// ===============
+// FOR SMARTPHONE
+// ================
 @media screen and (max-width: $sm) {
 
   .header {
-    ul {
       display: none;
-    }  
   }
 
   .hero-wrapper {
@@ -465,23 +465,63 @@ li {
   }
 
   .title-wrapper {
-    // text-align: center;
-    // margin: 0 auto;
-    padding-top: 0;
+    padding-top: 3rem;
+    .heading-name {
+      margin-top: 0;
+    }
+  }
+
+ //Work
+.work {
+  .btn-work {
+    margin: 0 auto 2rem;
   }
 
   .wrapper-pj {
     display: flex;
     flex-direction: column;
+    .pj {
+      margin-bottom: 2rem;
+    }
   }
+}
+
+//About
+.about {
+  .wrapper-img-txt {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  
+    .about-img {
+      margin: 0 auto 3rem;
+      .design-circle {
+        position:initial
+      }
+    }
+  }
+}
+
+//Qualifications 
+.qualifications {
+  .wrapper-h2 {
+    margin: 4rem auto 4rem;
+    width: 60%;
+    .heading-qualifications {
+      font-size: 2.2rem;
+    }
+  }
+}
 
   
 
   // Contact
 .contact {
-
+ 
   &-comment {
-    text-align: center;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .form {
@@ -494,17 +534,16 @@ li {
     display: flex;
     flex-direction: column;
     align-items:center;
-    // display: grid;
-    // // grid-template-columns: 1fr;
-    // grid-template-rows: 1fr 1fr 1fr;
+    
     .contact-info {
-      margin: 0 auto;
+      margin: .5rem 1rem;
+      
       
       input {
         border: none;
         border-bottom: 1px solid $sub-color-green;
         font-size: $font-size-sm;
-        width: 50%;
+        width: 70%;
       }
       .message {
         border: 1px solid $sub-color-green;

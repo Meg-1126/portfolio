@@ -521,6 +521,22 @@ li {
   }
 }
 
+// Skills
+.skills {
+  background-color: $main-color;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  // padding: 10px 10px;
+
+  .skill-box {
+    text-align: center;
+    padding: 0;
+    padding-top: 1.2rem;
+    border: 1px solid white;
+  }
+}
+
   
 
   // Contact

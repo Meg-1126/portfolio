@@ -415,6 +415,19 @@ li {
     font-size: 2.2rem;
   }
 
+  .skills {
+    background-color: #E9DDDE;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .skills .skill-box {
+    text-align: center;
+    padding: 0;
+    padding-top: 1.2rem;
+    border: 1px solid white;
+  }
+
   .contact-comment {
     text-align: left;
     width: 80%;

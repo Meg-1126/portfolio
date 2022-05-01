@@ -121,7 +121,8 @@ li {
 
   .hero-bottom {
     text-align: center;
-    margin: 10px auto;
+    margin: 1rem auto;
+    padding: .5rem;
     width: 30%;
     background-color: $main-color;
     border-radius: 20px;
@@ -310,7 +311,7 @@ li {
   }
 
   .wrapper-edu {
-    border: 3px solid $main-color;
+    border: 3px solid $sub-color-purple;
     border-radius: 20px;
     width: 60%;
     margin: 0 auto;
@@ -336,6 +337,15 @@ li {
 }
 // Contact
 .contact {
+
+  .wrapper-h2 {
+    border: none;
+    border-bottom: 2px dotted $sub-color-green;
+    border-width: 10px;
+    width: 20%;
+    margin: 60px auto 30px;
+    text-align: center;
+  }
 
   &-comment {
     text-align: center;
@@ -390,14 +400,7 @@ li {
     }
   }
 
-  .wrapper-h2 {
-    border: none;
-    border-bottom: 2px dotted $sub-color-green;
-    border-width: 10px;
-    width: 20%;
-    margin: 60px auto 30px;
-    text-align: center;
-  }
+  
 }
 // Footer
 .footer {
@@ -442,6 +445,8 @@ li {
     font-size: 1rem;
   }
 
+
+
   .header {
       display: none;
   }
@@ -481,6 +486,12 @@ li {
 
  //Work
 .work {
+
+  .wrapper-h2{
+    margin: 2rem 2rem;
+    width: 10rem;
+    text-align: left;
+  }
   .btn-work {
     margin: 0 auto 2rem;
   }
@@ -496,6 +507,11 @@ li {
 
 //About
 .about {
+  .wrapper-h2{
+    margin: 2rem 2rem;
+    width: 10rem;
+    text-align: left;
+  }
   .wrapper-img-txt {
     display: grid;
     grid-template-columns: 1fr;
@@ -513,10 +529,11 @@ li {
 //Qualifications 
 .qualifications {
   .wrapper-h2 {
-    margin: 4rem auto 4rem;
-    width: 60%;
+    margin: 2rem 2rem;
+    width: 18rem;
+    text-align: left;
     .heading-qualifications {
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
   }
 }
@@ -528,7 +545,7 @@ li {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   // padding: 10px 10px;
-
+  
   .skill-box {
     text-align: center;
     padding: 0;
@@ -541,6 +558,12 @@ li {
 
   // Contact
 .contact {
+
+  .wrapper-h2 {
+    margin: 2rem 2rem;
+    width: 12rem;
+    text-align: left;
+  }
  
   &-comment {
     text-align: left;
@@ -579,15 +602,6 @@ li {
     }
     
     
-  }
-
-  .wrapper-h2 {
-    border: none;
-    border-bottom: 2px dotted $sub-color-green;
-    border-width: 10px;
-    width: 20%;
-    margin: 60px auto 30px;
-    text-align: center;
   }
 }
 

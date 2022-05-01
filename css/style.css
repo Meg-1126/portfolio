@@ -75,7 +75,8 @@ li {
 }
 .hero-wrapper .hero-bottom {
   text-align: center;
-  margin: 10px auto;
+  margin: 1rem auto;
+  padding: 0.5rem;
   width: 30%;
   background-color: #E9DDDE;
   border-radius: 20px;
@@ -238,7 +239,7 @@ li {
   padding: 30px 30px;
 }
 .qualifications .wrapper-edu {
-  border: 3px solid #E9DDDE;
+  border: 3px solid #E2DDE9;
   border-radius: 20px;
   width: 60%;
   margin: 0 auto;
@@ -258,6 +259,14 @@ li {
   border: 2px solid white;
 }
 
+.contact .wrapper-h2 {
+  border: none;
+  border-bottom: 2px dotted #DDE9E8;
+  border-width: 10px;
+  width: 20%;
+  margin: 60px auto 30px;
+  text-align: center;
+}
 .contact-comment {
   text-align: center;
 }
@@ -307,14 +316,6 @@ li {
   background-color: #a5c2bf;
   color: white;
   transition: 0.3s;
-}
-.contact .wrapper-h2 {
-  border: none;
-  border-bottom: 2px dotted #DDE9E8;
-  border-width: 10px;
-  width: 20%;
-  margin: 60px auto 30px;
-  text-align: center;
 }
 
 .footer {
@@ -384,6 +385,11 @@ li {
     font-size: 3rem;
   }
 
+  .work .wrapper-h2 {
+    margin: 2rem 2rem;
+    width: 10rem;
+    text-align: left;
+  }
   .work .btn-work {
     margin: 0 auto 2rem;
   }
@@ -395,6 +401,11 @@ li {
     margin-bottom: 2rem;
   }
 
+  .about .wrapper-h2 {
+    margin: 2rem 2rem;
+    width: 10rem;
+    text-align: left;
+  }
   .about .wrapper-img-txt {
     display: grid;
     grid-template-columns: 1fr;
@@ -408,11 +419,12 @@ li {
   }
 
   .qualifications .wrapper-h2 {
-    margin: 4rem auto 4rem;
-    width: 60%;
+    margin: 2rem 2rem;
+    width: 18rem;
+    text-align: left;
   }
   .qualifications .wrapper-h2 .heading-qualifications {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .skills {
@@ -428,6 +440,11 @@ li {
     border: 1px solid white;
   }
 
+  .contact .wrapper-h2 {
+    margin: 2rem 2rem;
+    width: 12rem;
+    text-align: left;
+  }
   .contact-comment {
     text-align: left;
     width: 80%;
@@ -458,14 +475,6 @@ li {
     padding: 10px 15px;
     font-size: 1.2rem;
     width: 90%;
-  }
-  .contact .wrapper-h2 {
-    border: none;
-    border-bottom: 2px dotted #DDE9E8;
-    border-width: 10px;
-    width: 20%;
-    margin: 60px auto 30px;
-    text-align: center;
   }
 }
 /*SMARTPHONE END*//*# sourceMappingURL=style.css.map */

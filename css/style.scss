@@ -93,7 +93,7 @@ li {
 .hero-wrapper {
   background-color: rgba(255,255,255,0.3);
   background-blend-mode:lighten;
-  height: 90vh;
+  height: 100vh;
   // background-image: url(../images/hero-bg.jpg); /*rose*/
   // background-image: url(../images/hero-flowers-1920.jpg); /*sm flower*/
   background-image: url(../images/hero-toy-1920.jpg); /*toy*/
@@ -124,6 +124,10 @@ li {
       font-size: 1.5rem;
       font-weight: 600;
       color: white;
+    }
+
+    i {
+      padding-right: .5rem;
     }
   }
 }
@@ -334,8 +338,6 @@ li {
     width: 60%;
     margin: 0 auto;
     .tab-btns {
-      // text-align: center;
-      // margin: 0 auto;
       .tab-btn {
         padding: 1rem 1rem;
         background-color: transparent;
@@ -494,6 +496,103 @@ li {
   }
 }
 
+// ===============
+// FOR  TABLET
+// ================
+@media screen and (max-width: $x-lg) {
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .work {
+    .wrapper-pj {
+      display: flex;
+      flex-direction: column;
+      
+      .pj {
+        margin-bottom: 2rem;
+        position: relative;
+        .mask {
+          width:			250px;
+          height:			250px;
+          border-radius: 30%;
+          position:		absolute;
+          top:			5%;
+          left:			36%;
+          opacity:		0;	
+          background-color:	rgba(0,0,0,0.4);
+          transition:		all 0.6s ease;
+          cursor: pointer;
+          &:hover {
+            opacity: 1;
+          }
+          .caption {
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            padding-top: 50%;
+          }
+        }
+      }
+    
+    }
+  }
+
+  .about {
+    .wrapper-img-txt {
+      .about-img{
+        .design-circle {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          background-color: transparent;
+          border: 2px solid #fff;
+          border-width: .2rem;
+          position: absolute;
+          top: .5rem;
+          left: .5rem;
+        }
+    
+        .design-circle2 {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          background-color: transparent;
+          border: 2px solid #fff;
+          border-width: .2rem;
+          position: absolute;
+          top: -.7rem;
+          left: -.7rem;
+        }
+      
+        img {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          position: absolute;
+        }
+      }
+
+      .about-txt {
+        font-size: 1rem;
+      }
+
+    }
+  }
+
+  .qualifications {
+    #wrapper-tabs {
+      .tab-btns {
+        .tab-btn{
+          font-size: .9rem;
+        }
+      }
+    }
+  }
+
+
+} /*Tablet end*/
 
 // ===============
 // FOR SMARTPHONE
@@ -578,31 +677,6 @@ li {
       transition: .5s;
     }
 
-    //   //Add these classes below using JS
-    //   .menu-in {
-    //     transform: translate(200px, 200px);
-    //   }
-
-    //   .line_1,.line_2,.line_3{
-    //     background: #000000;
-    //   }
-    //   .line_1 {
-    //     transform: rotate(90deg);
-    //     transform-origin: 0 0;
-    //   }
-    //   .line_2 {
-    //     opacity: 0;
-    //   }
-    //   .line_3 {
-    //     transform: rotate(45deg);
-    //     // bottom: 0;
-    //   }
-    //   // END - Classes for JS
-    // }
-  
-
-  
-
   .hero-wrapper {
     background-color: rgba(255,255,255,0.3);
     background-blend-mode:lighten;
@@ -638,8 +712,6 @@ li {
 
  //Work
 .work {
-
-  
   .wrapper-h2{
     margin: 2rem 2rem;
     width: 10rem;

@@ -69,7 +69,7 @@ li {
 .hero-wrapper {
   background-color: rgba(255, 255, 255, 0.3);
   background-blend-mode: lighten;
-  height: 90vh;
+  height: 100vh;
   background-image: url(../images/hero-toy-1920.jpg);
   /*toy*/
   background-size: cover;
@@ -99,6 +99,9 @@ li {
   font-size: 1.5rem;
   font-weight: 600;
   color: white;
+}
+.hero-wrapper .hero-bottom i {
+  padding-right: 0.5rem;
 }
 
 .logo {
@@ -410,6 +413,78 @@ li {
   color: white;
 }
 
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .work .wrapper-pj {
+    display: flex;
+    flex-direction: column;
+  }
+  .work .wrapper-pj .pj {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  .work .wrapper-pj .pj .mask {
+    width: 250px;
+    height: 250px;
+    border-radius: 30%;
+    position: absolute;
+    top: 5%;
+    left: 36%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.6s ease;
+    cursor: pointer;
+  }
+  .work .wrapper-pj .pj .mask:hover {
+    opacity: 1;
+  }
+  .work .wrapper-pj .pj .mask .caption {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-top: 50%;
+  }
+
+  .about .wrapper-img-txt .about-img .design-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-width: 0.2rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+  .about .wrapper-img-txt .about-img .design-circle2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-width: 0.2rem;
+    position: absolute;
+    top: -0.7rem;
+    left: -0.7rem;
+  }
+  .about .wrapper-img-txt .about-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .about .wrapper-img-txt .about-txt {
+    font-size: 1rem;
+  }
+
+  .qualifications #wrapper-tabs .tab-btns .tab-btn {
+    font-size: 0.9rem;
+  }
+}
+/*Tablet end*/
 @media screen and (max-width: 576px) {
   h2 {
     font-size: 2rem;

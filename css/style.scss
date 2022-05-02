@@ -82,7 +82,7 @@ li {
 
   // Hero
 .header {
-  padding: 40px 0 10px;
+  padding: 20px 0 10px;
   margin: auto;
   width: 100%;
   position: fixed;
@@ -310,23 +310,43 @@ li {
     text-align: center;
   }
 
-  .wrapper-exp {
-    border: 3px solid $sub-color-purple;
-    border-radius: 20px;
+  #wrapper-tabs {
     width: 60%;
     margin: 0 auto;
-    padding: 30px 30px;
+    .tab-btns {
+      // text-align: center;
+      // margin: 0 auto;
+      .tab-btn {
+        padding: 1rem 1rem;
+        background-color: transparent;
+        border: 1px solid $sub-color-purple;
+        cursor: pointer;
+        // border-radius: 20px;
+        &:hover {
+          background-color: $sub-color-dpurple;
+          color: white;
+          transition: .3s;
+        }
+        &.active {
+          background-color: $sub-color-purple;
+        }
+      }
+    }
+    .content {
+      border: 3px solid $sub-color-purple;
+      // border-radius: 20px;
+      margin: 0 auto;
+      padding: 30px 30px;
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  
     
   }
 
-  .wrapper-edu {
-    border: 3px solid $sub-color-purple;
-    border-radius: 20px;
-    width: 60%;
-    margin: 0 auto;
-    padding: 30px 30px;
-    // display: none;
-  }
+  
 }
 // Skills
 .skills {

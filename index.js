@@ -16,3 +16,13 @@ function smallMenu () {
 document.getElementById('hamburger').addEventListener('click', function(){
   smallMenu();
 });
+
+$(function(){
+$('.tab-btn').click(function(){
+  let index = $('.tab-btn').index(this);
+  $('.tab-btn').removeClass('active');
+  $(this).addClass('active');
+  $('.content').hide().eq(index).show();
+})
+});
+

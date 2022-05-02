@@ -129,23 +129,29 @@
             <h2 class="heading-qualifications"><i class="fa-solid fa-person-circle-plus fa-xs"></i> QUALIFICATIONS</h2>
           </div>
           <div id="wrapper-tabs">
-            <div class="wrapper-exp">
-              <h4><i class="fa-solid fa-briefcase"></i> EXPERIENCE</h4>
-              <ul>
-                <li>2021 - Present: Web Content Writer (Freelancer)</li>
-                <li>2017 - 2021: Study Abroad Coorinator, Tohoku University</li>
-                <li>2016 - 2017: Secretary to Prof. Akira Miyamoto, Tohoku University</li>
-                <li>2014 - 2016: English Teacher for Kids, Amity</li>
-              </ul>
+            <div class="tab-btns">
+              <button class="tab-btn active"><i class="fa-solid fa-briefcase"></i> EXPERIENCE</button>
+              <button class="tab-btn"><i class="fa-solid fa-graduation-cap"></i> EDUCATION</button>
             </div>
-            <div class="wrapper-edu">
-              <h4><i class="fa-solid fa-graduation-cap"></i> EDUCATION</h4>
-              <ul>
-                <li>2021 - Present: Cornerstone Community College of Canada, BC, Canada</li>
-                <li>
-                  2007 - 2011: BA, Liberal Arts, Tohoku Gakuin University, Sendai, Japan
-                </li>
-              </ul>
+            <div class="tab-contents">
+              <div id="exp" class="wrapper-exp content active">
+                <!-- <h4><i class="fa-solid fa-briefcase"></i> EXPERIENCE</h4> -->
+                <ul>
+                  <li>2021 - Present: Web Content Writer (Freelancer)</li>
+                  <li>2017 - 2021: Study Abroad Coorinator, Tohoku University</li>
+                  <li>2016 - 2017: Secretary to Prof. Akira Miyamoto, Tohoku University</li>
+                  <li>2014 - 2016: English Teacher for Kids, Amity</li>
+                </ul>
+              </div>
+              <div id="edu" class="wrapper-edu content">
+                <!-- <h4><i class="fa-solid fa-graduation-cap"></i> EDUCATION</h4> -->
+                <ul>
+                  <li>2021 - Present: Cornerstone Community College of Canada, BC, Canada</li>
+                  <li>
+                    2007 - 2011: BA, Liberal Arts, Tohoku Gakuin University, Sendai, Japan
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
@@ -207,6 +213,7 @@
       </footer>
     </div>
     <!-- JavaScript -->
+    <script src="jquery-3.6.0.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

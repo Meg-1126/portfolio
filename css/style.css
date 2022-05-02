@@ -39,7 +39,7 @@ li {
 }
 
 .header {
-  padding: 40px 0 10px;
+  padding: 20px 0 10px;
   margin: auto;
   width: 100%;
   position: fixed;
@@ -238,19 +238,32 @@ li {
   margin: 60px auto;
   text-align: center;
 }
-.qualifications .wrapper-exp {
-  border: 3px solid #E2DDE9;
-  border-radius: 20px;
+.qualifications #wrapper-tabs {
   width: 60%;
   margin: 0 auto;
-  padding: 30px 30px;
 }
-.qualifications .wrapper-edu {
+.qualifications #wrapper-tabs .tab-btns .tab-btn {
+  padding: 1rem 1rem;
+  background-color: transparent;
+  border: 1px solid #E2DDE9;
+  cursor: pointer;
+}
+.qualifications #wrapper-tabs .tab-btns .tab-btn:hover {
+  background-color: #a396b5;
+  color: white;
+  transition: 0.3s;
+}
+.qualifications #wrapper-tabs .tab-btns .tab-btn.active {
+  background-color: #E2DDE9;
+}
+.qualifications #wrapper-tabs .content {
   border: 3px solid #E2DDE9;
-  border-radius: 20px;
-  width: 60%;
   margin: 0 auto;
   padding: 30px 30px;
+  display: none;
+}
+.qualifications #wrapper-tabs .content.active {
+  display: block;
 }
 
 .skills {

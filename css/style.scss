@@ -189,6 +189,31 @@ li {
     }
   }
 
+  .pj {
+    position: relative;
+    .mask {
+      width:			300px;
+	    height:			300px;
+      border-radius: 20px;
+	    position:		absolute;
+	    top:			0;
+	    left:			0;
+	    opacity:		0;	
+	    background-color:	rgba(0,0,0,0.4);
+	    transition:		all 0.6s ease;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+      .caption {
+        color: white;
+        font-weight: 700;
+        font-size: 2rem;
+        padding-top: 50%;
+      }
+    }
+  }
+
   .pj-hide {
     display: none;
   }
@@ -201,7 +226,6 @@ li {
   }
 
   .wrapper-h2 {
-    // padding-top: 10px;
     border: none;
     border-bottom: 2px dotted $sub-color-purple;
     border-width: 10px;
@@ -301,6 +325,24 @@ li {
 // Qualifications
 .qualifications {
   margin-bottom: 4rem;
+
+  .qualification-btn {
+    button {
+      background-color: $sub-color-purple;
+      border: none;
+      margin-top: 2rem;
+      padding: 1.3rem 2rem;
+      border-radius: 20px;
+      
+      &:hover {
+        cursor: pointer;
+        background-color: $sub-color-dpurple;
+        color: white;
+        transition: .3s;
+      }
+    }
+  }
+
   .wrapper-h2 {
     border: none;
     border-bottom: 2px dotted $sub-color-purple;
@@ -340,6 +382,9 @@ li {
       display: none;
       &.active {
         display: block;
+      }
+      li {
+        list-style-type: circle;
       }
     }
   
@@ -596,6 +641,7 @@ li {
  //Work
 .work {
 
+  
   .wrapper-h2{
     margin: 2rem 2rem;
     width: 10rem;
@@ -608,9 +654,34 @@ li {
   .wrapper-pj {
     display: flex;
     flex-direction: column;
+    
     .pj {
       margin-bottom: 2rem;
+      position: relative;
+      
+      .mask {
+        width:			200px;
+        height:			200px;
+        border-radius: 50%;
+        position:		absolute;
+        top:			50px;
+        left:			140px;
+        opacity:		0;	
+        background-color:	rgba(0,0,0,0.4);
+        transition:		all 0.6s ease;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+        }
+        .caption {
+          color: white;
+          font-weight: 700;
+          font-size: 1.5rem;
+          padding-top: 50%;
+        }
+      }
     }
+  
   }
 }
 
